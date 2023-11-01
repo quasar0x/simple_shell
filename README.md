@@ -14,3 +14,4 @@ This project involves creating a simple Unix shell program. A shell is a command
 * It will handle commands input from standard input (stdin).
 * The program will execute commands in the PATH or specified with a full path.
 * Error handling will be implemented for invalid commands or arguments.
+# simple_shell
