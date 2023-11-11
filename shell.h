@@ -184,14 +184,15 @@ int set_alias(info_t *, char *);
 int _myalias(info_t *);
 
 /*toem_getline.c */
+ssize_t input_buff(info_t *, char **, size_t *);
 ssize_t get_input(info_t *);
 int _getline(info_t *, char **, size_t *);
 void sigintHandler(int);
 
 /* toem_getinfo.c */
-void clear_info(info_t *);
-void set_info(info_t *, char **);
-void free_info(info_t *, int);
+void clear_infos(info_t *);
+void set_infos(info_t *, char **);
+void free_infos(info_t *, int);
 
 /* toem_environ.c */
 int _myenv(info_t *);
