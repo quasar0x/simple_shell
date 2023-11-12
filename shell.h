@@ -120,7 +120,7 @@ void fork_cmd(info_t *);
 /* toem_parser.c */
 int is_cmd(info_t *, char *);
 char *dup_chars(char *, int, int);
-char *find_path(info_t *, char *, char *);
+char *path_finder(info_t *, char *, char *);
 
 /* loophsh.c */
 int loophsh(char **);
@@ -134,13 +134,13 @@ int _putsfd(char *str, int fd);
 /* toem_string.c */
 int _strlen(char *);
 int _strcmp(char *, char *);
-char *starts_with(const char *, const char *);
+char *starting_with(const char *, const char *);
 char *_strcat(char *, char *);
 
 /* toem_string1.c */
 char *_strcpy(char *, char *);
 char *_strdup(const char *);
-void _puts(char *);
+void _put(char *);
 int _putchar(char);
 
 /* toem_exits.c */
