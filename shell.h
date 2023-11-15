@@ -127,8 +127,8 @@ int loophsh(char **);
 
 /* toem_errors.c */
 void _eputs(char *);
-int _eputchar(char);
-int _putfd(char c, int fd);
+int _eputchar(signed char c);
+int _putfd(signed char c, int fd);
 int _putsfd(char *str, int fd);
 
 /* toem_string.c */
@@ -228,7 +228,7 @@ list_t *node_start_with(list_t *, char *, char);
 ssize_t get_node_index(list_t *, list_t *);
 
 /* toem_vars.c */
-int is_chain(info_t *, char *, size_t *);
+int current_chain(info_t *, char *, size_t *);
 void check_chain(info_t *, char *, size_t *, size_t, size_t);
 int replace_alias(info_t *);
 int replace_vars(info_t *);
